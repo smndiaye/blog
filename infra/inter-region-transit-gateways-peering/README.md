@@ -85,6 +85,7 @@ Since peering is not done yet, no response is expected.
 
 
 4. Peer the 2 transit gateways 👉 [Transit gateway peering attachments](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering.html)
+   
    One of the account has to create a peering attachment request and the other one has to accept it.
    In our example, Tokyo is making the peering attachment request.
 ```terraform
