@@ -63,7 +63,7 @@
   `kubectl create -f pod-smn-auth.yml`
 
   |  Kind                   | Api Version   |
-      | ----------------------- | ------------- |
+  | ----------------------- | ------------- |
   |  Pod                    | v1            |
   |  Service                | v1            |
   |  Replication Controller | v1            |
