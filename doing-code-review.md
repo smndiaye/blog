@@ -63,3 +63,5 @@ A good code review will save you time and money by spotting potential problems b
 [2] [TOP 40 Static Code Analysis Tools](https://www.softwaretestinghelp.com/tools/top-40-static-code-analysis-tools)
 
 [3] [How to do a code review](https://google.github.io/eng-practices/review/reviewer)
+
+[4] [ML Blog](https://engineering.monstar-lab.com/en/post/2022/04/06/Best-practices-for-doing-code-reviews/)
