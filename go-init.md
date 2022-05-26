@@ -217,7 +217,7 @@ rr := 's'
 fmt.Printf("%v %T\n", r, r)   // 114 int32
 fmt.Printf("%v %T\n", rr, rr) // 115 int32
 ```	
-```
+
 ### Enumerated Const iota
 
 ```
