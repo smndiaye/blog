@@ -18,14 +18,14 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "attach-tgw-to-vpc" {
 }
 
 ### TODO apply when other side TGW ready
-## Create the Peering attachment
+# Create the Peering attachment
 #resource "aws_ec2_transit_gateway_peering_attachment" "request-peering" {
 #  peer_account_id         = var.other_side_tgw.account_id
 #  peer_region             = var.other_side_tgw.region
 #  peer_transit_gateway_id = var.other_side_tgw.id
 #  transit_gateway_id      = aws_ec2_transit_gateway.tgw.id
 #}
-#
+
 ### TODO apply when other side peering ready
 ## VPC protected subnet route to the other AWS account protected subnet
 #resource "aws_route" "out-of-protected-subnet" {
@@ -36,14 +36,14 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "attach-tgw-to-vpc" {
 #}
 #
 ## Route to the other side: forward other side route to the peering attachment
-#resource "aws_ec2_transit_gateway_route" "tgw-route-other-pf" {
+#resource "aws_ec2_transit_gateway_route" "tgw-route-to-other-pf" {
 #  destination_cidr_block         = var.other_side_tgw.cidr_block
 #  transit_gateway_attachment_id  = aws_ec2_transit_gateway_peering_attachment.request-peering.id
 #  transit_gateway_route_table_id = aws_ec2_transit_gateway.tgw.association_default_route_table_id
 #}
 #
 ## Route to this side: forward this side route to the VPC itself
-#resource "aws_ec2_transit_gateway_route" "tgw-route-for-iot-pf" {
+#resource "aws_ec2_transit_gateway_route" "tgw-route-to-this-pf" {
 #  destination_cidr_block         = var.cidr_block
 #  transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.attach-tgw-to-vpc.id
 #  transit_gateway_route_table_id = aws_ec2_transit_gateway.tgw.association_default_route_table_id
