@@ -147,7 +147,9 @@ When testing we should also care about covering all possible scenario
 Following are coverage standards that can help you find the degree of which your system is tested
 
 C0: every line of the source code is tested
+
 C1: all control statement (if statement, switch cases, while loops, ...) branches are tested
+
 C2: all conditions true and false scenario are tested
 
 ```
